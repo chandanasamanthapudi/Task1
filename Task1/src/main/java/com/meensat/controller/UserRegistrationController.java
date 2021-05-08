@@ -10,12 +10,11 @@ import com.meensat.dto.UserRegistrationDto;
 import com.meensat.service.UserService;
 
 @Controller
-@RequestMapping("/user_registration")
+@RequestMapping("/registration")
 public class UserRegistrationController {
-	
-	
+
 	private UserService userService;
-	
+
 	public UserRegistrationController(UserService userService) {
 		super();
 		this.userService = userService;
@@ -25,13 +24,14 @@ public class UserRegistrationController {
     public UserRegistrationDto userRegistrationDto() {
         return new UserRegistrationDto();
     }
+	
 	@GetMapping
 	public String showRegistrationForm() {
-		return "userRegistration";
+		return "registration";
 	}
+	
 	@PostMapping
-	  public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto){
-
+	public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto) {
 		userService.save(registrationDto);
 		return "redirect:/registration?success";
 	}

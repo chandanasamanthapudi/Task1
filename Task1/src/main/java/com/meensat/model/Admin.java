@@ -1,4 +1,4 @@
-package com.meensat.model;
+/*package com.meensat.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -61,3 +61,4 @@ public class Admin {
 	}
 	
 }
+*/

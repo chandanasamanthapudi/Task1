@@ -1,4 +1,4 @@
-package com.meensat.model;
+/*package com.meensat.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -62,3 +62,4 @@ public class Customer {
 			this.logitude = logitude;
 		}		
 }
+*/
